@@ -77,7 +77,7 @@ Evaluation
 
 **Model:** XGBoost
 
-**Accuracy:** 86.4%
+**Accuracy:** 86.4% (later 87.5% by incorporating certain changes)
 
 ---
 
