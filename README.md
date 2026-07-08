@@ -85,14 +85,9 @@ Evaluation
 
 - Heart_Disease_Prediction.ipynb
 - Heart_Disease_Research_Paper.pdf
-- requirements.txt
-- confusion_matrix.png
-
 ---
 
 ## Future Work
-
-- SHAP Explainability
 - Streamlit Deployment
 - External Validation
-- Probability Calibration
+
