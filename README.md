@@ -3,10 +3,12 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-red.svg)](https://xgboost.readthedocs.io/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B.svg)](https://streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://heart-disease-prediction-ml-fcpczxzgpyh4mjrmsk9qz9.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An end-to-end supervised machine learning pipeline for cardiovascular risk prediction using physiological, metabolic, and electrocardiographic indicators.
+
+🔗 **Live Application:** [https://heart-disease-prediction-ml-fcpczxzgpyh4mjrmsk9qz9.streamlit.app/](https://heart-disease-prediction-ml-fcpczxzgpyh4mjrmsk9qz9.streamlit.app/)
 
 > **Project Origin:** Researched and developed during the **PYML Internship at Anveshan Foundation, Indira Gandhi Delhi Technical University for Women (IGDTUW)**.
 
