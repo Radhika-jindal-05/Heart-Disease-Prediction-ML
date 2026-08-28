@@ -605,9 +605,18 @@ def main():
         st.markdown("</div>", unsafe_allow_html=True)
 
         # ---------------------------------------------------------------------
-        # CLINICAL REPORT EXPORT BUTTON
+        # CLINICAL REPORT EXPORT BUTTON (WITH ACCURATE TIMEZONE TIMESTAMP)
         # ---------------------------------------------------------------------
-        timestamp_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        try:
+            import zoneinfo
+            tz = zoneinfo.ZoneInfo("Asia/Kolkata")
+            local_dt = datetime.datetime.now(tz)
+            timestamp_str = local_dt.strftime("%Y-%m-%d %I:%M:%S %p %Z")
+        except Exception:
+            tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30), name="IST")
+            local_dt = datetime.datetime.now(tz)
+            timestamp_str = local_dt.strftime("%Y-%m-%d %I:%M:%S %p IST")
+
         report_text = f"""=======================================================
 CARDIOPULSE AI — CLINICAL RISK ASSESSMENT SUMMARY
 Generated: {timestamp_str}
@@ -661,7 +670,7 @@ clinical imaging, laboratory analysis, or physician judgment.
     </div>
 
     <div style="text-align: center; color: #94a3b8; font-size: 0.85rem; margin-top: 2.2rem; font-weight: 500;">
-        Engineered by <strong>Radhika Jindal</strong> • PYML Research, Anveshan Foundation, IGDTUW • Built with Scikit-Learn & XGBoost
+        CardioPulse AI • Engineered by <strong>Radhika</strong> • Built with Scikit-Learn &amp; XGBoost
     </div>
     """), unsafe_allow_html=True)
 
